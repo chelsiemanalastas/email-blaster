@@ -1,0 +1,23 @@
+.sidenav {
+    width: 20%;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.sidenav button {
+    margin: 0;
+    margin: 5px 0;
+    min-height: 50px;
+    border: none;
+    transition: background 0.3s;
+}
+
+.sidenav button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+}
+
+.selected {
+    background-color: rgb(70, 160, 230);
+}

@@ -1,0 +1,122 @@
+.login {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 20%;
+    margin: auto;
+    margin-top: 10%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login i {
+    color: rgb(150, 150, 150);
+}
+
+.login-header {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.login-inputs {
+    width: 100%;
+}
+
+.login-input-container {
+    width: 100%;
+    display: flex;
+}
+
+.login input,
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin: 6px;
+    font-size: 14px;
+}
+
+.login input {
+    background-color: ghostwhite;
+}
+.login input:focus {
+    outline: 2px solid gray;
+}
+
+.login button {
+    width: 95%;
+    /* background-color: rgb(97, 219, 251); */
+    background-color: rgb(70, 160, 230);
+    transition: background 0.7s;
+    margin-top: 18px;
+}
+
+.login button:hover {
+    cursor: pointer;
+    background-color: rgb(5, 116, 201);
+}
+
+.login button:active,
+.authentication-options i:active {
+    transform: scale(0.98);
+}
+
+.login-buttons span {
+    inset: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.invalid {
+    display: block;
+    padding-left: 8px;
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    color: red;
+}
+
+.authentication {
+    padding: 12px;
+    text-align: center;
+}
+
+.authentication p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-size: 14px;
+}
+
+.authentication span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.authentication-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.authentication-options i {
+    font-size: 24px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 4px;
+    width: 125px;
+    color: rgb(70, 70, 70);
+    transition: background 0.5s;
+}
+
+.authentication-options i:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+    color: black;
+    border: 1px solid black;
+}
