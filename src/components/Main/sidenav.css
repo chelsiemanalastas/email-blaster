@@ -1,8 +1,19 @@
 .sidenav {
     width: 20%;
-    border-radius: 12px;
     text-align: center;
     padding: 20px;
+    background-color: rgb(54, 69, 79);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.sidenav i {
+    font-size: 70px;
+    padding-bottom: 10px;
+    color: rgb(97, 219, 251);
+}
+
+.sidenav i:hover {
+    cursor: pointer;
 }
 
 .sidenav button {
@@ -15,9 +26,26 @@
 
 .sidenav button:hover {
     cursor: pointer;
-    background-color: rgb(200, 200, 200);
+    background-color: ghostwhite;
 }
 
 .selected {
-    background-color: rgb(70, 160, 230);
+    /* background-color: rgb(70, 160, 230); */
+    background-color: rgb(97, 219, 251);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.inactive {
+    background-color: white;
+}
+
+.sidenav button:active,
+.authentication-options i:active {
+    transform: scale(0.99);
+}
+
+.logout-button {
+    background-color: rgb(250, 70, 70);
 }

@@ -5,7 +5,8 @@
     width: 20%;
     margin: auto;
     margin-top: 10%;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .login i {
@@ -17,6 +18,11 @@
     width: 100%;
     padding-bottom: 20px;
     font-size: 25px;
+}
+
+.login-header i {
+    font-size: 70px;
+    color: rgb(70, 190, 230);
 }
 
 .login-inputs {
@@ -36,21 +42,24 @@ button {
     border: none;
     margin: 6px;
     font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .login input {
     background-color: ghostwhite;
 }
 .login input:focus {
-    outline: 2px solid gray;
+    outline: 1px solid gray;
 }
 
 .login button {
     width: 95%;
-    /* background-color: rgb(97, 219, 251); */
-    background-color: rgb(70, 160, 230);
+    background-color: rgb(97, 219, 251);
+    /* background-color: rgb(70, 160, 230); */
     transition: background 0.7s;
     margin-top: 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
 .login button:hover {

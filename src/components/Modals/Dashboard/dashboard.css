@@ -1,0 +1,24 @@
+.dashboard {
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.dashboard-logo {
+    height: 100%;
+    width: 30%;
+}
+
+.dashboard-widgets {
+    width: 70%;
+}
+.dashboard i {
+    color: rgb(70, 190, 230);
+    font-size: 200px;
+    padding: 50px;
+}
+
+.widget {
+    width: 200px;
+    height: 100px;
+}

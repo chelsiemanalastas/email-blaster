@@ -1,16 +1,17 @@
 .home {
     margin: 0;
-    padding: 100px;
     height: 100vh;
-    background-color: white;
+    background-color: ghostwhite;
     box-sizing: border-box;
     display: flex;
 }
 
 .home-modals {
-    width: 70%;
-    padding: 0 30px;
-    background-color: antiquewhite;
+    width: 75%;
+    height: 100%;
+    padding: 20px 30px;
     border-radius: 12px;
     box-sizing: border-box;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
 }

@@ -2,7 +2,55 @@ body {
     margin: 0;
     padding: 0;
     background-color: ghostwhite;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App {
+.ql-toolbar,
+.ql-container,
+.ql-snow {
+}
+
+.ql-container {
+    border: none;
+}
+
+.ql-editor {
+    font-size: 14px;
+    padding: 10px;
+    width: 69vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+    background: ghostwhite;
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 12px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: gray;
+} */
+
+.ql-snow {
+    border: none;
+}
+
+.ql-container.ql-snow,
+.ql-toolbar {
+    border: none !important;
+}
+
+.ql-toolbar {
+    /* border-bottom: 1px solid rgb(220, 220, 220) !important; */
+    box-shadow: 0px 11px 10px -15px gray;
 }

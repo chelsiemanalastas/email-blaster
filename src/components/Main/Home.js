@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import SideNav from "./SideNav";
-import ComposeEmail from "../Modals/ComposeEmail/ComposeEmail";
+import Dashboard from "../Modals/Dashboard/Dashboard";
 import ManageAccounts from "../Modals/ManageAccounts/ManageAccounts";
-import SentEmails from "../Modals/SentEmails/SentEmails";
+import ScheduleBlast from "../Modals/ScheduleBlast/ScheduleBlast";
 import Activities from "../Modals/Activities/Activities";
 import "../Main/home.css";
+import CreateEmail from "../Modals/CreateEmail/CreateEmail";
 
 const navs = [
     {
         id: 1,
-        name: "Compose Email",
+        name: "Create Email",
     },
     {
         id: 2,
@@ -18,7 +19,7 @@ const navs = [
     },
     {
         id: 3,
-        name: "Sent Emails",
+        name: "Schedule Blast",
     },
     {
         id: 4,
@@ -40,9 +41,10 @@ export default function Home() {
                 navOptions={navs}
             />
             <div className="home-modals">
-                {selectedNav === 1 ? <ComposeEmail setIcon="fa" /> : null}
+                {selectedNav === null ? <Dashboard /> : null}
+                {selectedNav === 1 ? <CreateEmail setIcon="fa" /> : null}
                 {selectedNav === 2 ? <ManageAccounts setIcon="fa" /> : null}
-                {selectedNav === 3 ? <SentEmails setIcon="fa" /> : null}
+                {selectedNav === 3 ? <ScheduleBlast setIcon="fa" /> : null}
                 {selectedNav === 4 ? <Activities setIcon="fa" /> : null}
             </div>
         </div>

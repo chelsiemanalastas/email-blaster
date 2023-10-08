@@ -1,0 +1,89 @@
+.input-label {
+    width: 120px;
+}
+
+.create-email input {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 40%;
+    padding: 6px;
+    font-size: 14px;
+    background-color: white;
+    margin-left: 8px;
+}
+
+.create-email input:focus {
+    outline: none;
+    /* outline: 1px solid rgb(5, 116, 201); */
+    border: 1px solid rgb(5, 116, 201);
+    border-radius: 6px;
+}
+
+.email-editor {
+    height: 500px;
+}
+
+.header-tabs {
+    display: flex;
+}
+
+.header-tabs button {
+    width: 20%;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+    clip-path: inset(-10px -10px 0px -10px);
+}
+
+.header-tabs button:hover {
+    cursor: pointer;
+}
+
+.header-tabs button {
+    transition: background 0.2s;
+}
+
+.inactive-tab {
+    background-color: rgb(220, 220, 220);
+}
+
+.active-tab {
+    color: black;
+    background-color: white;
+    border-top: 4px solid rgb(97, 219, 251);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.show-content {
+    display: block;
+}
+
+.editor-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    height: 85vh;
+    width: 70vw;
+    border-radius: 0 8px 8px 8px;
+    padding: 10px 15px;
+}
+
+.content-tabs {
+    display: none;
+}
+
+.content-tabs p {
+    margin: 0;
+}
+
+.editor {
+    display: flex;
+    justify-content: center;
+    height: 88%;
+}
+
+.save-email {
+    all: unset;
+}

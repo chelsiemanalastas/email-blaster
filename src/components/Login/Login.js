@@ -24,7 +24,9 @@ export default function Login() {
 
     return (
         <div className="login">
-            <div className="login-header">{login ? "Login" : "Sign Up"}</div>
+            <div className="login-header">
+                <i className="fa fa-meetup icon"></i>
+            </div>
             <div className="login-inputs">
                 <div className="login-input-container">
                     {/* <i className="fa fa-user icon"></i> */}
