@@ -1,0 +1,23 @@
+.email-item {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.email-item:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+.email-item h3 {
+    margin: 0;
+}
+
+.email-item p {
+    margin: 0;
+}
+
+.email-item-date {
+    font-size: 14px;
+}

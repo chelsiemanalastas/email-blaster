@@ -1,14 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./createEmail.css";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import emailData from "../../assets/data/email-list.json";
+import EmailItem from "../../common/EmailItem";
+import axios from "axios";
 
-export default function CreateEmail() {
+export default function CreateEmail({ onShowPopup, emailItems }) {
     const [editEmail, setEditEmail] = useState("");
     const [activeTab, setActiveTab] = useState("edit");
+    const [emails, setEmails] = useState([]);
+
+    useEffect(() => {
+        setEmails(emailData);
+    }, []);
 
     function switchTab(tab) {
         setActiveTab(tab);
+    }
+
+    function handleSave() {
+        onShowPopup("save-email");
     }
 
     const modules = {
@@ -76,7 +88,7 @@ export default function CreateEmail() {
                         activeTab === "preview" ? "active-tab" : "inactive-tab"
                     }
                 >
-                    Preview
+                    Saved Emails
                 </button>
                 {/* <button className="save-email">Save</button> */}
             </div>
@@ -86,9 +98,7 @@ export default function CreateEmail() {
                 {/* Editor */}
                 <div
                     className={
-                        activeTab === "edit"
-                            ? "editor show-content"
-                            : "content-tabs"
+                        activeTab === "edit" ? "editor show-content" : "hide"
                     }
                 >
                     <ReactQuill
@@ -100,15 +110,35 @@ export default function CreateEmail() {
                         placeholder="Start writing your email..."
                     />
                 </div>
+                <button
+                    className={activeTab === "edit" ? "save-email" : "hide"}
+                    onClick={() => handleSave()}
+                >
+                    Save
+                </button>
                 {/* Preview */}
                 <div
                     className={
                         activeTab === "preview"
-                            ? "preview show-content"
-                            : "content-tabs"
+                            ? "email-list show-content"
+                            : "hide"
                     }
                 >
-                    <p>Preview</p>
+                    <div className="half emails">
+                        <div className="search-email">
+                            <i className="fa fa-search icon"></i>
+                            <input type="text" placeholder="Search" />
+                        </div>
+                        <div className="list">
+                            {emails.map((e) => (
+                                <EmailItem title={e.title} />
+                            ))}
+                        </div>
+                    </div>
+                    <div className="half preview">
+                        <h3>Email title</h3>
+                        <div className="email-preview">{code}</div>
+                    </div>
                 </div>
             </div>
         </div>

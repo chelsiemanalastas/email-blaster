@@ -54,3 +54,38 @@ body {
     /* border-bottom: 1px solid rgb(220, 220, 220) !important; */
     box-shadow: 0px 11px 10px -15px gray;
 }
+
+.popups {
+    display: block; /* Hide the modal by default */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.popups-content {
+    /* width: 30%; */
+}
+
+.show-modal {
+    display: block;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.99);
+}

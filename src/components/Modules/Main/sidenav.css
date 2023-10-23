@@ -1,7 +1,8 @@
 .sidenav {
     width: 20%;
+    max-width: 320px;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
     background-color: rgb(54, 69, 79);
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
@@ -26,7 +27,7 @@
 
 .sidenav button:hover {
     cursor: pointer;
-    background-color: ghostwhite;
+    transform: scale(1.01);
 }
 
 .selected {

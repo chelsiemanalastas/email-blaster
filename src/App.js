@@ -1,5 +1,5 @@
-import Login from "./components/Login/Login";
-import Home from "./components/Main/Home";
+import Login from "../src/components/Modules/Login/Login";
+import Home from "../src/components/Modules/Main/Home";
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

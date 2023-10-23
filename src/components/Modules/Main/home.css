@@ -1,15 +1,14 @@
 .home {
-    margin: 0;
     height: 100vh;
     background-color: ghostwhite;
-    box-sizing: border-box;
     display: flex;
 }
 
 .home-modals {
-    width: 75%;
+    margin: auto;
+    width: 80%;
     height: 100%;
-    padding: 20px 30px;
+    padding: 20px;
     border-radius: 12px;
     box-sizing: border-box;
     /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,

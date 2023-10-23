@@ -1,0 +1,62 @@
+.popup-save-email {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    width: 600px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.popup-save-email h2 {
+    margin: 0;
+    padding: 8px;
+}
+.save-email-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.save-email-header i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: gray;
+}
+
+.save-email-header i:hover {
+    cursor: pointer;
+}
+
+.save-email-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.save-email-container input {
+    padding: 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 14px;
+}
+
+.save-email-container input:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(5, 116, 201);
+}
+
+.popup-save-email button {
+    width: 50%;
+    background-color: rgb(97, 219, 251);
+    transition: background 0.3s;
+}
+
+.popup-save-email button:hover {
+    background-color: rgb(70, 175, 255);
+}
