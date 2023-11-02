@@ -127,16 +127,16 @@
     color: gray;
     display: flex;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 5px;
 }
 
 .half {
-    width: 50%;
     height: 100%;
     box-sizing: border-box;
 }
 
 .list {
+    padding: 4px;
     height: 75vh;
     overflow-y: scroll;
 }
@@ -152,22 +152,18 @@
     padding: 6px;
     padding-left: 10px;
     border-radius: 16px;
-    width: 80%;
+    width: 95%;
     margin-bottom: 10px;
 }
 
 .search-email input {
     all: unset;
     margin-left: 10px;
-    width: 90%;
+    /* width: 90%; */
 }
 
 .search-email input:focus {
     border: none;
-}
-
-.list {
-    padding: 10px;
 }
 
 .preview {
@@ -176,16 +172,25 @@
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
-    padding: 10px;
+    padding: 0 10px;
     height: 80vh;
 }
-.preview h2 {
+.preview h3 {
     margin: 0;
-    padding: 8px;
+    text-align: center;
+    font-style: italic;
 }
 
 .email-preview {
-    /* padding: 20px; */
+    padding: 20px;
     overflow-y: scroll;
     height: 75vh;
+}
+
+.emails {
+    width: 40%;
+}
+
+.preview {
+    width: 60%;
 }

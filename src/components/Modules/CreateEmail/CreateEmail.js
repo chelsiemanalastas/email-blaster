@@ -10,6 +10,9 @@ export default function CreateEmail({ onShowPopup, emailItems }) {
     const [editEmail, setEditEmail] = useState("");
     const [activeTab, setActiveTab] = useState("edit");
     const [emails, setEmails] = useState([]);
+    const [emailItemSelected, setEmailItemSelected] = useState(null);
+    const [emailTitlePreview, setEmailTitlePreview] = useState("Select Email");
+    const [emailBodyPreview, setEmailBodyPreview] = useState("");
 
     useEffect(() => {
         setEmails(emailData);
@@ -21,6 +24,13 @@ export default function CreateEmail({ onShowPopup, emailItems }) {
 
     function handleSave() {
         onShowPopup("save-email");
+    }
+
+    function handleEmailItemSelect(id, title, body) {
+        console.log("HANDLE EMAIL ITEM SELECTED: ", id);
+        setEmailItemSelected(id);
+        setEmailTitlePreview(title);
+        setEmailBodyPreview(body);
     }
 
     const modules = {
@@ -130,14 +140,29 @@ export default function CreateEmail({ onShowPopup, emailItems }) {
                             <input type="text" placeholder="Search" />
                         </div>
                         <div className="list">
-                            {emails.map((e) => (
-                                <EmailItem title={e.title} />
+                            {emails.map((email) => (
+                                <EmailItem
+                                    title={email.title}
+                                    key={email.id}
+                                    onClick={() =>
+                                        handleEmailItemSelect(
+                                            email.id,
+                                            email.title,
+                                            email.body
+                                        )
+                                    }
+                                    selected={
+                                        email.id === emailItemSelected
+                                            ? true
+                                            : false
+                                    }
+                                />
                             ))}
                         </div>
                     </div>
                     <div className="half preview">
-                        <h3>Email title</h3>
-                        <div className="email-preview">{code}</div>
+                        <h3>{emailTitlePreview}</h3>
+                        <div className="email-preview">{emailBodyPreview}</div>
                     </div>
                 </div>
             </div>

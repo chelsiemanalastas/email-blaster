@@ -2,10 +2,13 @@
     box-sizing: border-box;
     width: 100%;
     border-radius: 12px;
-    padding: 8px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
-.email-item:hover {
+.email-item:not(.item-selected):hover {
     cursor: pointer;
     background-color: ghostwhite;
 }
@@ -19,5 +22,33 @@
 }
 
 .email-item-date {
-    font-size: 14px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.item-selected {
+    background-color: #dcdcdc;
+}
+
+.item-action {
+    float: right;
+    /* margin-right: 10px; */
+}
+
+.item-action i {
+    font-size: 28px;
+    padding: 4px;
+}
+
+.fa-trash {
+    color: #ed2939;
+}
+
+.fa-pencil {
+    color: #2d5da1;
+}
+
+.fa-trash:hover,
+.fa-pencil:hover {
+    transform: scale(1.08);
 }
