@@ -3,96 +3,112 @@
         "title": "Your first email",
         "tags": "test, all",
         "body": "This is the body of the first email",
+        "dateCreated": "November 2, 2023",
         "id": 1
     },
     {
         "title": "Trying React",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "this is the body of trying react",
+        "dateCreated": "November 2, 2023",
         "id": 2
     },
     {
         "title": "Scheduled Blast",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "eto naman ay yung scheduled blast",
+        "dateCreated": "November 1, 2023",
         "id": 3
     },
     {
         "title": "Please Read Me",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "eto ay ewan ko ba",
+        "dateCreated": "November 1, 2023",
         "id": 4
     },
     {
         "title": "Warning! Do not open",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "hay naku, di ko na alam",
+        "dateCreated": "November 1, 2023",
         "id": 5
     },
     {
         "title": "Mission: Impossible",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "ano na lang ang mailalagay",
+        "dateCreated": "October 31, 2023",
         "id": 6
     },
     {
         "title": "Don't Look Up",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "bakit nagkaroon ng movie dito",
+        "dateCreated": "October 30, 2023",
         "id": 7
     },
     {
         "title": "Your first email",
         "tags": "test, all",
         "body": "This is the body of the first email",
+        "dateCreated": "October 30, 2023",
         "id": 8
     },
     {
         "title": "Trying React",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "this is the body of trying react",
+        "dateCreated": "October 30, 2023",
         "id": 9
     },
     {
         "title": "Scheduled Blast",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "eto naman ay yung scheduled blast",
+        "dateCreated": "October 28, 2023",
         "id": 10
     },
     {
         "title": "Please Read Me",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "eto ay ewan ko ba",
+        "dateCreated": "October 27, 2023",
         "id": 11
     },
     {
         "title": "Warning! Do not open",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "hay naku, di ko na alam",
+        "dateCreated": "October 25, 2023",
         "id": 12
     },
     {
         "title": "Mission: Impossible",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "ano na lang ang mailalagay",
+        "dateCreated": "October 25, 2023",
         "id": 13
     },
     {
         "title": "Don't Look Up",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "bakit nagkaroon ng movie dito",
+        "dateCreated": "October 15, 2023",
         "id": 14
     },
     {
         "title": "Your first email",
         "tags": "test, all",
         "body": "This is the body of the first email",
+        "dateCreated": "October 15, 2023",
         "id": 15
     },
     {
         "title": "Trying React",
-        "tags": "Why do we use it?",
+        "tags": "email, sample, tags",
         "body": "this is the body of trying react",
+        "dateCreated": "October 13, 2023",
         "id": 16
     }
 ]

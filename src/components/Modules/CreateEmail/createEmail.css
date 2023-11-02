@@ -136,7 +136,7 @@
 }
 
 .list {
-    padding: 4px;
+    padding: 8px;
     height: 75vh;
     overflow-y: scroll;
 }

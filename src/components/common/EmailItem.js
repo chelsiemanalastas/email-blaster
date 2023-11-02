@@ -1,7 +1,14 @@
 import React from "react";
 import "../common/common.css";
 
-export default function EmailItem({ children, title, selected, onClick, key }) {
+export default function EmailItem({
+    children,
+    title,
+    selected,
+    onClick,
+    tags,
+    date,
+}) {
     function handleSelection(id) {
         console.log("Email Item clicked: ", selected);
     }
@@ -12,8 +19,8 @@ export default function EmailItem({ children, title, selected, onClick, key }) {
         >
             <div className="item-details">
                 <h3>{title}</h3>
-                <p>tags, tags, tags</p>
-                <p className="email-item-date">October</p>
+                <p>{tags}</p>
+                <p className="email-item-date">{date}</p>
             </div>
             <div className="item-action">
                 <i className="fa fa-pencil"></i>

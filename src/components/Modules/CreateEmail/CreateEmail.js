@@ -13,6 +13,8 @@ export default function CreateEmail({ onShowPopup, emailItems }) {
     const [emailItemSelected, setEmailItemSelected] = useState(null);
     const [emailTitlePreview, setEmailTitlePreview] = useState("Select Email");
     const [emailBodyPreview, setEmailBodyPreview] = useState("");
+    const [emailTagsPreview, setEmailTagsPreview] = useState("");
+    const [emailDatePreview, setEmailDatePreview] = useState("");
 
     useEffect(() => {
         setEmails(emailData);
@@ -26,11 +28,13 @@ export default function CreateEmail({ onShowPopup, emailItems }) {
         onShowPopup("save-email");
     }
 
-    function handleEmailItemSelect(id, title, body) {
+    function handleEmailItemSelect(id, title, body, tags, date) {
         console.log("HANDLE EMAIL ITEM SELECTED: ", id);
         setEmailItemSelected(id);
         setEmailTitlePreview(title);
         setEmailBodyPreview(body);
+        setEmailTagsPreview(tags);
+        setEmailDatePreview(date);
     }
 
     const modules = {
@@ -148,7 +152,9 @@ export default function CreateEmail({ onShowPopup, emailItems }) {
                                         handleEmailItemSelect(
                                             email.id,
                                             email.title,
-                                            email.body
+                                            email.body,
+                                            email.tags,
+                                            email.date
                                         )
                                     }
                                     selected={
@@ -156,6 +162,8 @@ export default function CreateEmail({ onShowPopup, emailItems }) {
                                             ? true
                                             : false
                                     }
+                                    tags={email.tags}
+                                    date={email.dateCreated}
                                 />
                             ))}
                         </div>
